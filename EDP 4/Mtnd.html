@@ -1,0 +1,71 @@
+<html>
+
+<head>
+  <title>Máquina de Turing </title>
+
+  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/menu.css">
+
+  <style>
+  body{
+    background-image: url(img/fondos.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    
+  }
+
+  </style>
+</head> 
+
+<body text="white">
+  <header>
+    <div class="contenedor">
+      <h3 class="icon-bank"> MÁQUINA DE TURING</h3>
+      <input type="checkbox" id="menu-bar">
+      <label class="icon-th-list" for="menu-bar"> </label>
+
+      <nav class="menu">
+        <a href="Index.html">Inicio </a>
+        <a href="Biografia.html">Alan Turing </a>
+        <a href="Maquina.html">Máquina de Turing </a>
+        <a href="Universal.html">Maquina de Turing Universal</a>
+        <a href="Mtnd.html">Maquina de Turing No Determinística</a>
+        <a href="Ejemplos.html">Ejemplos</a>
+
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <p>------------------------------------------------------------------------------------</p>
+     <br>
+       <center><font size="10"color="YELLOW">Máquina de Turing No Determinínistica</font></center>
+     <br>
+    <center><img src="img/no.JPG.crdownload"></center>
+      
+      <h2>Las máquinas de Turing que hemos visto se llaman también determinísticas. 
+          Existe otro tipo de máquinas más generales llamadas no determinísticas.</h2>
+<h2>La diferencia fundamental es que puede haber varias cuádruplas comenzando por la misma pareja de símbolo estado. De esta forma ante una configuración inicial pueden existir distintos cálculos posibles. No existe una única línea de cálculo. Dada una configuración la máquina puede evolucionar a distintas configuraciones. </h2>
+      <h2>Análogamente a las máquinas determinísticas, diremos que una configuración</h2> 
+<center><h2>... sj ... </h2></center>
+ <center><h2>↓</h2></center>
+ <center><h2>  qi</h2></center>
+
+    <h2>es terminal si y sólo si no existe ninguna cuádrupla que comience por qisj. Cuando alcanza una configuración terminal, la máquina se dice que para. 
+Usaremos el símbolo |- entre un par de configuraciones para indicar que se puede pasar de una a otra mediante una cuádrupla (un paso de cálculo) 
+</h2>
+      
+      <br>
+      
+      <h2>TEOREMA</h2>
+ <h2>Para todo lenguaje L recursivamente enumerable existe una máquina de Turing M no determinística que acepta el lenguaje L. </h2>
+ <h2>La propiedad inversa es también cierta. Todo lenguaje aceptado por una máquina de Turing no determinística será también r.e. . Por la tesis de Church-Turing esto debería ser cierto. Sólo es necesario simular una máquina no determinística M para una entrada u, siguiendo todas las alternativas en cada paso, y dando un valor (por ejemplo 0) si se alcanza una configuración terminal en una de las posibles ramas. Esto define una función que es intuitivamente parcialmente calculable y cuyo dominio es el lenguaje aceptado por M. 
+</h2>
+  </main>
+    
+
+
+</body>
+
+</html>
